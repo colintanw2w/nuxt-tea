@@ -40,3 +40,7 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+## Example
+
+https://stackblitz.com/github/piniajs/example-nuxt-3?file=pages%2Findex.vue

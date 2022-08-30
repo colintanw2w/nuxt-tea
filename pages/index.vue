@@ -1,6 +1,3 @@
-<template>
-    hi
-</template>
 <script setup lang="ts">
 import { useCounter } from "~/stores/counter";
 
@@ -9,3 +6,7 @@ definePageMeta({
 });
 const counter = useCounter();
 </script>
+
+<template>
+    hi
+</template>

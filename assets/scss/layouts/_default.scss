@@ -1,0 +1,22 @@
+.default-layout {
+  @apply min-h-screen w-screen overflow-hidden;
+
+  .teams-sidebar {
+    @apply transition-transform duration-200 ease-in-out;
+    @apply -translate-x-full;
+  }
+
+  main {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  &.sidebar-open {
+    main {
+      @apply pl-16;
+    }
+
+    .teams-sidebar {
+      transform: translateX(0);
+    }
+  }
+}

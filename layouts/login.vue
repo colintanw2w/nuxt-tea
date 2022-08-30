@@ -8,6 +8,6 @@
 </template>
   <style lang="postcss" scoped>
   .login-layout {
-      background-color: gray;
+      @apply bg-red-300;
   }
   </style>
