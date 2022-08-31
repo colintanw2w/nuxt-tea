@@ -1,9 +1,13 @@
 import { defineNuxtConfig } from 'nuxt'
+import { resolve } from 'path'
 import path from 'path'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: ['~/assets/scss/tailwind.scss'],
+    alias: {
+        '~scss': resolve(__dirname, './assets/scss'),
+    },
     build: {
         extractCSS: true,
         postcss: {

@@ -1,0 +1,48 @@
+@use "~scss/abstracts/_colors.scss";
+
+$teamsSidebarWidth: 250px;
+
+.teams-sidebar {
+  @apply fixed top-0 left-0 bottom-0 overflow-auto;
+  @apply flex flex-col items-center;
+  @apply pt-2;
+  width: 4.5rem;
+  background-color: colors.$blue-600;
+}
+
+.teams-sidebar .team-block,
+.teams-sidebar .add-block {
+  @apply aspect-square m-2;
+  @apply flex justify-center items-center;
+  @apply relative;
+  @apply cursor-pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem; /* value not supported by Tailwind */
+  background-color: colors.$blue-500;
+  color: #ffffff;
+
+  &:before {
+    border-radius: 8px;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid transparent;
+  }
+
+  &:hover {
+    &:before {
+      border-color: colors.$blue-400;
+    }
+  }
+
+  &.active {
+    &:before {
+      border-color: colors.$blue-300;
+    }
+  }
+}

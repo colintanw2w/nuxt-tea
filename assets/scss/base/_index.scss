@@ -6,3 +6,8 @@ body {
   @apply bg-slate-600;
   @apply min-h-screen;
 }
+
+.content-container {
+  @apply max-w-screen-2xl mx-auto;
+  @apply px-2;
+}

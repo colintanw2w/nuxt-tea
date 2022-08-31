@@ -1,6 +1,9 @@
 @use "base";
 @use "layouts/default";
 
+@use "components/teams-sidebar";
+@use "components/top-nav";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

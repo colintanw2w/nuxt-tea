@@ -41,6 +41,10 @@ npm run preview
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
-## Example
+## Example Pinia store with Nuxt 3
 
 https://stackblitz.com/github/piniajs/example-nuxt-3?file=pages%2Findex.vue
+
+## Using @use instead of @import in SASS
+
+https://www.youtube.com/watch?v=CR-a8upNjJ0

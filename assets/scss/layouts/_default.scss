@@ -1,5 +1,6 @@
 .default-layout {
   @apply min-h-screen w-screen overflow-hidden;
+  @apply bg-white;
 
   .teams-sidebar {
     @apply transition-transform duration-200 ease-in-out;
@@ -12,7 +13,7 @@
 
   &.sidebar-open {
     main {
-      @apply pl-16;
+      margin-left: 4.5rem; /* depends on teams-sidebar width */
     }
 
     .teams-sidebar {

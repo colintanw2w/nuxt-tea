@@ -12,14 +12,12 @@ defineExpose({
 
 <template>
     <aside class="teams-sidebar">
-        <div v-for="team in teams" class="rounded-md w-full aspect-square bg-orange-500 mb-3">
+        <div v-for="(team, i) in teams" class="team-block bg-amber-700" :class="i === 0 ? 'active' : ''">
             {{  team  }}
+        </div>
+
+        <div class="add-block">
+            +
         </div>
     </aside>
 </template>
-
-<style lang="scss" scoped>
-.teams-sidebar {
-    @apply fixed top-0 left-0 bottom-0 w-16 bg-slate-700 p-3 overflow-auto;
-}
-</style>

@@ -12,12 +12,8 @@ defineExpose({
 
 <template>
     <nav class="top-nav">
-        This is the main nav
+        <div class="content-container flex-1">
+            Teamdriver nav bar thing
+        </div>
     </nav>
 </template>
-    
-    <style lang="scss" scoped>
-    .top-nav {
-        @apply bg-sky-700 px-6 py-4;
-    }
-    </style>
