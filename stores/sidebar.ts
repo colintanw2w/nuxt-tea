@@ -5,7 +5,6 @@ export const useSidebar = defineStore('sidebar', {
         isOpen: true,
     }),
 
-
     actions: {
         toggle() {
             this.isOpen = !this.isOpen
