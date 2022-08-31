@@ -45,6 +45,18 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 
 https://stackblitz.com/github/piniajs/example-nuxt-3?file=pages%2Findex.vue
 
+## temporary alternative for nuxt auth
+
+https://www.npmjs.com/package/@nuxtjs-alt/auth
+
+## auth middleware
+
+https://youtu.be/IcaL1RfnU44?t=204 (do not mind the module he is using)
+
+## nuxt auth (vue2)
+
+https://www.youtube.com/watch?v=zzUpO8tXoaw
+
 ## Using @use instead of @import in SASS
 
 https://www.youtube.com/watch?v=CR-a8upNjJ0
