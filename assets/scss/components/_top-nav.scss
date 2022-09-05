@@ -1,7 +1,6 @@
 @use "~scss/abstracts/_colors.scss";
 
 .top-nav {
-  @apply flex items-center;
+  @apply flex items-center bg-blue-400;
   height: 4.5rem;
-  background-color: colors.$blue-400;
 }

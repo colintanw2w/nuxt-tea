@@ -1,21 +1,33 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [],
   theme: {
-    extend: {
-      colors: {
-        brown: {
-          50: "#fdf8f6",
-          100: "#f2e8e5",
-          200: "#eaddd7",
-          300: "#e0cec7",
-          400: "#d2bab0",
-          500: "#bfa094",
-          600: "#a18072",
-          700: "#977669",
-          800: "#846358",
-          900: "#43302b",
-        },
+    /* colors are read from abstracts/_colors.scss */
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      blue: {
+        600: "hsl(var(--td-color-blue-600), <alpha-value>)" /* heading, teams bar */,
+        500: "hsl(var(--td-color-blue-500), <alpha-value>)" /* teams sidebar block default color */,
+        400: "hsl(var(--td-color-blue-400), <alpha-value>)" /* topnav color, login background color */,
+        300: "hsl(var(--td-color-blue-300), <alpha-value>)" /* text color, Teams sidebar active team border */,
+        200: "hsl(var(--td-color-blue-200), <alpha-value>)" /* top nav text color */,
+      },
+      gray: {
+        300: "hsl(var(--td-color-gray-300), <alpha-value>)" /* borders */,
+        200: "hsl(var(--td-color-gray-200), <alpha-value>)" /* borders */,
+        100: "hsl(var(--td-color-gray-100), <alpha-value>)" /* button color */,
+      },
+      orange: {
+        DEFAULT: "hsl(var(--td-color-orange-400), <alpha-value>)",
+        400: "hsl(var(--td-color-orange-400), <alpha-value>)",
+      },
+      turqoise: {
+        DEFAULT:
+          "hsl(var(--td-color-turqoise-400), <alpha-value>)" /* check marks in plan selection */,
+        400: "hsl(var(--td-color-turqoise-400), <alpha-value>)" /* check marks in plan selection */,
       },
     },
   },

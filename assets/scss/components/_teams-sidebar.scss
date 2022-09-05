@@ -6,8 +6,8 @@ $teamsSidebarWidth: 250px;
   @apply fixed top-0 left-0 bottom-0 overflow-auto;
   @apply flex flex-col items-center;
   @apply pt-2;
+  @apply bg-blue-600;
   width: 4.5rem;
-  background-color: colors.$blue-600;
 }
 
 .teams-sidebar .team-block,
@@ -16,10 +16,10 @@ $teamsSidebarWidth: 250px;
   @apply flex justify-center items-center;
   @apply relative;
   @apply cursor-pointer;
+  @apply bg-blue-500;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.25rem; /* value not supported by Tailwind */
-  background-color: colors.$blue-500;
   color: #ffffff;
 
   &:before {
@@ -36,13 +36,13 @@ $teamsSidebarWidth: 250px;
 
   &:hover {
     &:before {
-      border-color: colors.$blue-400;
+      @apply border-blue-400;
     }
   }
 
   &.active {
     &:before {
-      border-color: colors.$blue-300;
+      @apply border-blue-300;
     }
   }
 }

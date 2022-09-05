@@ -1,9 +1,3 @@
-/*
- * Because interpolation removes quotation marks from quoted strings,
- * it may be necessary to wrap them in the meta.inspect() function to preserve their quotes.
- */
-@use "sass:meta";
-
 @use "abstracts/colors";
 @use "base";
 @use "layouts/default";
@@ -16,8 +10,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  @each $name, $val in colors.$map {
-    --td-#{$name}: #{meta.inspect($val)};
+@layer base {
+  :root {
+    @each $name, $val in colors.$map {
+      --td-color-#{$name}: #{$val};
+    }
   }
 }
