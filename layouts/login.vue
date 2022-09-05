@@ -1,13 +1,10 @@
+<script setup>
+useHead({
+    bodyAttrs: {
+        class: 'login-layout'
+    }
+});
+</script>
 <template>
-    <div class="login-layout">
-        <div>
-            Login Layout
-        </div>
-        <slot />
-    </div>
+    <slot />
 </template>
-  <style lang="postcss" scoped>
-  .login-layout {
-      @apply bg-red-300;
-  }
-  </style>

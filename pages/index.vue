@@ -8,5 +8,9 @@ const counter = useCounter();
 </script>
 
 <template>
-    hi
+    <div class="rounded-lg border bg-white w-[28.5rem] mx-auto mt-48 p-16">
+        <h1 class="">Inloggen</h1>
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Wachtwoord">
+    </div>
 </template>

@@ -1,6 +1,6 @@
 $blue-600: #061e2d; /* heading, teams bar */
 $blue-500: #2e414e; /* teams sidebar block default color */
-$blue-400: #03569d; /* topnav color */
+$blue-400: #03569d; /* topnav color, login background color */
 $blue-300: #5f7d95; /* text color, Teams sidebar active team border */
 $blue-200: #a4c2db; /* top nav text color */
 
@@ -9,5 +9,21 @@ $orange-400: #ff9a00; /* button color */
 $turquoise-400: #00bcb4; /* check marks in plan selection */
 
 $gray-300: #a6b8c7;
-$gray-200: #e3e9ee; /* borders */
+$gray-200: #e3e9ed; /* borders */
 $gray-100: #ebeff3; /* button color, */
+
+$map: (
+  /* #061e2d */ "blue-600": hsl(203, 76%, 10%),
+  /* #2e414e */ "blue-500": hsl(203, 26%, 24%),
+  /* #03569d */ "blue-400": hsl(208, 96%, 31%),
+  /* #5f7d95 */ "blue-300": hsl(207, 22%, 48%),
+  /* #a4c2db */ "blue-200": hsl(207, 43%, 75%),
+  /* #ff9a00 */ "orange-400": hsl(36, 100%, 50%),
+  /* #00bcb4 */ "turquoise-400": hsl(177, 100%, 37%),
+  /* a6b8c7 */ "gray-300": hsl(207, 23%, 72%),
+  /* e3e9ee */ "gray-200": hsl(207, 24%, 91%),
+  /* ebeff3 */ "gray-100": hsl(210, 25%, 94%)
+);
+
+// input borders #BDCBD7
+// default box border: #E3E9ED
