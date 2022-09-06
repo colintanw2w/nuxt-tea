@@ -16,7 +16,7 @@ module.exports = {
         200: "hsl(var(--td-color-blue-200), <alpha-value>)" /* top nav text color */,
       },
       gray: {
-        300: "hsl(var(--td-color-gray-300), <alpha-value>)" /* borders */,
+        300: "hsl(var(--td-color-gray-300), <alpha-value>)" /* TODO: forgot */,
         200: "hsl(var(--td-color-gray-200), <alpha-value>)" /* borders */,
         100: "hsl(var(--td-color-gray-100), <alpha-value>)" /* button color */,
       },

@@ -1,0 +1,14 @@
+.form-control {
+  @apply mb-2;
+}
+
+input[type="text"],
+input[type="password"] {
+  @apply border border-gray-300 rounded shadow-sm;
+  @apply block;
+  @apply px-4 py-3;
+  @apply w-full;
+  @apply text-blue-600;
+}
+.form-control input[type="text"] {
+}
