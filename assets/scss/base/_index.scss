@@ -1,3 +1,20 @@
+// 32 24 21
+.h1,
+.h2,
+.h3 {
+  @apply text-blue-600;
+}
+
+.h1 {
+  @apply text-3xl;
+}
+.h2 {
+  @apply text-2xl;
+}
+.h3 {
+  @apply text-xl;
+}
+
 .content-container {
   @apply max-w-screen-2xl mx-auto;
   @apply px-6;
