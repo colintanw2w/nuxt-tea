@@ -14,7 +14,9 @@
                 @apply text-orange-400;
             }
         }
+    }
 
+    .router-link-active .btn {
         &.active {
             @apply text-opacity-90;
             @apply bg-black;

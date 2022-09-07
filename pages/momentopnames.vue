@@ -3,8 +3,10 @@
 </script>
 
 <template>
-    <div class="content-container">
-        <h1>Momentopnames</h1>
+    <div class="content-container pt-8">
+        <h1 class="h1">
+            Momentopnames
+        </h1>
         <p>placeholder page for Momentopnames</p>
     </div>
 </template>

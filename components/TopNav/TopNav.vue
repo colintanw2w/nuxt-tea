@@ -9,8 +9,8 @@ defineExpose({
 });
 const route = useRoute();
 
-const activeClass = (name: string) => {
-    return route.name === name ? 'active' : '';
+const isActive = (name: string) => {
+    return route.name === name;
 };
 
 </script>
@@ -19,14 +19,14 @@ const activeClass = (name: string) => {
     <nav class="top-nav">
         <div class="content-container flex-1">
             Teamdriver nav bar thing
-            <NuxtLink to="dashboard">
-                <BaseButton color="transparent" :class="activeClass('dashboard')">
+            <NuxtLink to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
+                <BaseButton color="transparent" :class="isActive('dashboard') ? 'active' : ''">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                     Dashboard
                 </BaseButton>
             </NuxtLink>
-            <NuxtLink to="momentopnames">
-                <BaseButton color="transparent" :class="activeClass('momentopnames')">
+            <NuxtLink to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
+                <BaseButton color="transparent" :class="isActive('momentopnames')? 'active': ''">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                     Momentopnames
                 </BaseButton>
