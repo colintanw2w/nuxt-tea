@@ -1,10 +1,9 @@
 <script setup>
-import { useSidebar } from "~/stores/sidebar";
+import { useSidebar } from '~/stores/sidebar';
 
 const sidebar = useSidebar();
 
 </script>
-
 
 <template>
     <div :class="sidebar.isOpen ? 'sidebar-open' : ''" class="default-layout">

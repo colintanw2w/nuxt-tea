@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useCounter } from '~/stores/counter';
-import TextInput from '@/components/forms/TextInput.vue';
 
 definePageMeta({
     layout: 'login'
@@ -21,10 +20,10 @@ const submit = () => {
         <h1 class="h2 text-center mb-6">
             Inloggen
         </h1>
-        <TextInput type="text" placeholder="E-mail" data-attr="haha" />
-        <TextInput type="password" placeholder="Wachtwoord" />
-        <button class="border-0 bg-orange-400 text-white px-4 py-3 w-full rounded hover:bg-orange-500" @click="submit">
+        <FormTextInput type="text" placeholder="E-mail" data-attr="haha" />
+        <FormTextInput type="password" placeholder="Wachtwoord" />
+        <BaseButton color="orange" full @click="submit">
             Inloggen
-        </button>
+        </BaseButton>
     </div>
 </template>

@@ -3,6 +3,7 @@
 @use "layouts/default";
 @use "layouts/login";
 
+@use "components/base/button";
 @use "components/teams-sidebar";
 @use "components/top-nav";
 @use "components/forms/text-input";

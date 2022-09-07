@@ -1,0 +1,33 @@
+$map: (
+    "orange": (orange-400, orange-500),
+    "blue": (blue-400, blue-500)
+);
+
+.btn {
+    @apply border-0 px-4 py-3 rounded;
+
+    @each $name,
+    $val in $map {
+        $default: nth($val, 1);
+        $hover: nth($val, 2);
+
+        &.btn-#{$name} {
+            @apply bg-#{$default};
+            @apply text-white;
+            @apply hover:bg-#{$hover};
+        }
+    }
+
+    &.btn-transparent {
+        @apply bg-transparent;
+
+        &:hover {
+            @apply bg-black;
+            @apply bg-opacity-10;
+        }
+    }
+
+    svg {
+        @apply mr-2;
+    }
+}

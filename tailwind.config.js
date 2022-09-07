@@ -8,6 +8,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
+      black: "#000000",
       blue: {
         600: "hsl(var(--td-color-blue-600), <alpha-value>)" /* heading, teams bar */,
         500: "hsl(var(--td-color-blue-500), <alpha-value>)" /* teams sidebar block default color */,

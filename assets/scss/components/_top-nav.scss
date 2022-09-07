@@ -1,6 +1,28 @@
 @use "~scss/abstracts/_colors.scss";
 
 .top-nav {
-  @apply flex items-center bg-blue-400;
-  height: 4.5rem;
+    @apply flex items-center bg-blue-400;
+    height: 4.5rem;
+
+    .btn {
+        @apply ml-2;
+        @apply text-white;
+        @apply text-opacity-60;
+
+        &:hover {
+            svg {
+                @apply text-orange-400;
+            }
+        }
+
+        &.active {
+            @apply text-opacity-90;
+            @apply bg-black;
+            @apply bg-opacity-20;
+
+            svg {
+                @apply text-orange-400;
+            }
+        }
+    }
 }
