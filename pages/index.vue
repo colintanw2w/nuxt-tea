@@ -16,7 +16,7 @@ const submit = async () => {
 </script>
 
 <template>
-    <div class="rounded-lg border bg-white w-[28.5rem] mx-auto mt-48 p-16">
+    <div class="rounded-lg border bg-white w-[28.5rem] mx-auto mt-48 p-16 max-w-full">
         <h1 class="h2 text-center mb-6">Inloggen</h1>
         <TextInput type="text" placeholder="E-mail" data-attr='haha' />
         <TextInput type="password" placeholder="Wachtwoord" />
