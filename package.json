@@ -5,7 +5,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint": "eslint . --ext .ts"
+    "lint:scripts": "eslint . --ext .ts",
+    "lint:styles": "stylelint \"assets/scss/**/*.scss\"",
+    "lint": "npm run lint:scripts && npm run lint:styles"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
@@ -18,6 +20,9 @@
     "nuxt": "3.0.0-rc.8",
     "sass": "^1.54.6",
     "sass-loader": "^13.0.2",
+    "stylelint": "^14.11.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-scss": "^4.3.0",
     "typescript": "^4.8.2",
     "vite-plugin-eslint": "^1.8.1"
   },
