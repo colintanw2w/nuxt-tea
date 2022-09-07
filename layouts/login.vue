@@ -1,8 +1,8 @@
 <script setup>
 useHead({
     bodyAttrs: {
-        class: 'login-layout'
-    }
+        class: "login-layout",
+    },
 });
 </script>
 <template>

@@ -1,12 +1,11 @@
-import { defineNuxtConfig } from 'nuxt'
-import { resolve } from 'path'
-import path from 'path'
+import path, { resolve } from 'path';
+import { defineNuxtConfig } from 'nuxt';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: ['~/assets/scss/tailwind.scss'],
     alias: {
-        '~scss': resolve(__dirname, './assets/scss'),
+        '~scss': resolve(__dirname, './assets/scss')
     },
     build: {
         extractCSS: true,
@@ -19,9 +18,14 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss'],
     buildModules: [
         // pinia plugin
-        '@pinia/nuxt',
+        '@pinia/nuxt'
     ],
     typescript: {
         strict: false
     }
-})
+    // vite: {
+    //     plugins: [
+    //         eslintPlugin()
+    //     ]
+    // }
+});
