@@ -8,7 +8,6 @@ defineExpose({
     user: props.user
 });
 const route = useRoute();
-console.log('current name', route.name);
 
 const activeClass = (name: string) => {
     return route.name === name ? 'active' : '';
@@ -20,14 +19,18 @@ const activeClass = (name: string) => {
     <nav class="top-nav">
         <div class="content-container flex-1">
             Teamdriver nav bar thing
-            <BaseButton color="transparent" :class="activeClass('dashboard')">
-                <font-awesome-icon :icon="['fas', 'bars']" />
-                Dashboard
-            </BaseButton>
-            <BaseButton color="transparent">
-                <font-awesome-icon :icon="['fas', 'bars']" />
-                Momentopnames
-            </BaseButton>
+            <NuxtLink to="dashboard">
+                <BaseButton color="transparent" :class="activeClass('dashboard')">
+                    <font-awesome-icon :icon="['fas', 'bars']" />
+                    Dashboard
+                </BaseButton>
+            </NuxtLink>
+            <NuxtLink to="momentopnames">
+                <BaseButton color="transparent" :class="activeClass('momentopnames')">
+                    <font-awesome-icon :icon="['fas', 'bars']" />
+                    Momentopnames
+                </BaseButton>
+            </NuxtLink>
             <BaseButton color="transparent">
                 <font-awesome-icon :icon="['fas', 'bars']" />
                 Actieplan
