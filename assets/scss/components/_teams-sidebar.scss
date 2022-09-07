@@ -46,3 +46,7 @@ $teamsSidebarWidth: 250px;
     }
   }
 }
+
+.teams-sidebar .add-block:hover {
+  @apply bg-turqoise;
+}

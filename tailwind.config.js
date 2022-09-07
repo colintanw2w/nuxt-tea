@@ -27,9 +27,14 @@ module.exports = {
       },
       turqoise: {
         DEFAULT:
-          "hsl(var(--td-color-turqoise-400), <alpha-value>)" /* check marks in plan selection */,
-        400: "hsl(var(--td-color-turqoise-400), <alpha-value>)" /* check marks in plan selection */,
+          "hsl(var(--td-color-turquoise-400), <alpha-value>)" /* check marks in plan selection */,
+        400: "hsl(var(--td-color-turquoise-400), <alpha-value>)" /* check marks in plan selection */,
       },
+      // color aliases for easy use
+      border: "hsl(var(--td-color-gray-200), <alpha-value>)",
+      header: "hsl(var(--td-color-blue-600), <alpha-value>)",
+      text: "hsl(var(--td-color-blue-300), <alpha-value>)",
+      link: "hsl(var(--td-color-blue-400), <alpha-value>)",
     },
   },
   plugins: [],
