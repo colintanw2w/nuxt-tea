@@ -24,18 +24,14 @@ const isActive = (name: string) => {
             <NuxtLink to="dashboard">
                 <TdLogo class="top-nav-logo" />
             </NuxtLink>
-            <NuxtLink to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
-                <BaseButton color="transparent">
-                    <font-awesome-icon :icon="['fas', 'grip-vertical']" />
-                    Dashboard
-                </BaseButton>
-            </NuxtLink>
-            <NuxtLink to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
-                <BaseButton color="transparent">
-                    <font-awesome-icon :icon="['fas', 'list-check']" />
-                    Momentopnames
-                </BaseButton>
-            </NuxtLink>
+            <BaseButton color="transparent" to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
+                <font-awesome-icon :icon="['fas', 'grip-vertical']" />
+                Dashboard
+            </BaseButton>
+            <BaseButton color="transparent" to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
+                <font-awesome-icon :icon="['fas', 'list-check']" />
+                Momentopnames
+            </BaseButton>
             <BaseButton color="transparent">
                 <font-awesome-icon :icon="['fas', 'route']" />
                 Actieplan

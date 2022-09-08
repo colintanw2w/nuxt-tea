@@ -4,11 +4,15 @@ type Color = 'orange' | 'blue' | 'transparent';
 interface Props {
     color?: Color;
     full?: boolean;
+    variant?: 'button' | 'link';
+    to?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
     color: 'orange',
-    full: false
+    full: false,
+    variant: 'button',
+    to: null
 });
 
 const cssClasses = computed(() => {
@@ -19,7 +23,10 @@ const cssClasses = computed(() => {
 </script>
 
 <template>
-    <button v-bind="$attrs" class="btn" :class="cssClasses">
-        <slot />
+    <button v-if="!props.to" v-bind="$attrs" class="btn" :class="cssClasses" type="button">
+        <slot /> {{ JSON.stringify($props.to) }}
     </button>
+    <NuxtLink v-else v-bind="$attrs" :to="props.to" class="btn" :class="cssClasses">
+        <slot />
+    </NuxtLink>
 </template>

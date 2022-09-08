@@ -21,7 +21,7 @@
         }
     }
 
-    .router-link-active .btn {
+    .router-link-active.btn {
         @apply text-opacity-90;
         @apply bg-black;
         @apply bg-opacity-20;
