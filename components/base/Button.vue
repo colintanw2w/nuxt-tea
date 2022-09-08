@@ -24,7 +24,7 @@ const cssClasses = computed(() => {
 
 <template>
     <button v-if="!props.to" v-bind="$attrs" class="btn" :class="cssClasses" type="button">
-        <slot /> {{ JSON.stringify($props.to) }}
+        <slot />
     </button>
     <NuxtLink v-else v-bind="$attrs" :to="props.to" class="btn" :class="cssClasses">
         <slot />

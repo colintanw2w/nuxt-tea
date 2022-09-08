@@ -8,8 +8,10 @@ $map: (
 
     @each $name,
     $val in $map {
+        /* stylelint-disable scss/no-global-function-names */
         $default: nth($val, 1);
         $hover: nth($val, 2);
+        /* stylelint-enable scss/no-global-function-names */
 
         &.btn-#{$name} {
             @apply bg-#{$default};

@@ -4,7 +4,7 @@
 
 <template>
     <div class="content-container pt-8">
-        <h1 class="h1">
+        <h1 class="h1 mb-7">
             Momentopnames
         </h1>
         <p>placeholder page for Momentopnames</p>

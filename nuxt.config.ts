@@ -4,7 +4,7 @@ import svgLoader from 'vite-svg-loader';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    css: ['~/assets/scss/tailwind.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
+    css: ['~/assets/scss/main.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
     alias: {
         '~scss': resolve(__dirname, './assets/scss')
     },
