@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     },
     purgeCSS: { mode: 'postcss' },
 
-    modules: ['@nuxtjs/tailwindcss'],
+    modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
     buildModules: [
         // pinia plugin
         '@pinia/nuxt'
