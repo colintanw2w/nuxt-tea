@@ -13,7 +13,7 @@
             @apply block;
         }
 
-        @screen 2xl {
+        @screen xl {
             @apply hidden;
         }
     }
@@ -27,7 +27,7 @@
             @apply hidden;
         }
 
-        @screen 2xl {
+        @screen xl {
             @apply block;
         }
     }
