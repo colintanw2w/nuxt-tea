@@ -4,9 +4,13 @@
     @apply flex items-center bg-blue-400 relative;
     height: 4.5rem;
 
-    .top-nav-logo-sm {
-        margin-top: -0.5rem;
+    .top-nav-logo {
+        @apply -mt-2;
+        @apply mr-5;
         height: 30px;
+    }
+
+    .logo-sm {
         @apply hidden;
 
         @screen lg {
@@ -18,9 +22,7 @@
         }
     }
 
-    .top-nav-logo-lg {
-        margin-top: -0.5rem;
-        height: 30px;
+    .logo-lg {
         @apply block;
 
         @screen lg {
@@ -44,7 +46,45 @@
         }
     }
 
-    .router-link-active.btn {
+    .user-menu {
+        @apply flex justify-center items-center;
+        @apply cursor-pointer;
+
+        svg {
+            @apply text-white;
+            @apply text-opacity-50;
+            @apply ml-2;
+        }
+    }
+
+    .profile-img-container {
+        @apply w-10 h-10 rounded-full;
+        @apply bg-gray-300;
+    }
+
+    .default-menu {
+        @apply hidden;
+
+        @screen lg {
+            @apply flex flex-1;
+        }
+    }
+
+    .mobile-menu {
+        @apply flex;
+        @apply ml-auto;
+
+        @screen lg {
+            @apply hidden;
+        }
+
+        .btn {
+            @apply ml-0;
+        }
+    }
+
+    .default-menu>.nav-link.router-link-active.btn,
+    .mobile-menu>.router-link-active.btn {
         @apply text-opacity-90;
         @apply bg-black;
         @apply bg-opacity-20;
@@ -54,11 +94,10 @@
         }
     }
 
-    .mobile-menu {
-        @apply ml-auto;
-
-        .btn {
-            @apply ml-0;
-        }
+    .btn-upgrade {
+        @apply ml-auto mr-5 border-2;
+        @apply border-white border-opacity-25;
+        @apply text-white;
+        @apply py-2;
     }
 }

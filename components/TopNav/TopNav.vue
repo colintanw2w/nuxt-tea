@@ -23,28 +23,38 @@ const isActive = (name: string) => {
     <nav class="top-nav">
         <div class="content-container flex-1 flex items-center">
             <NuxtLink to="dashboard">
-                <TdLogoSmall class="top-nav-logo-sm" />
-                <TdLogoLarge class="top-nav-logo-lg" />
+                <TdLogoSmall class="top-nav-logo logo-sm" />
+                <TdLogoLarge class="top-nav-logo logo-lg" />
             </NuxtLink>
-            <div class="default-menu hidden lg:flex">
-                <BaseButton color="transparent" to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
+            <div class="default-menu">
+                <BaseButton color="transparent" to="dashboard" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'grip-vertical']" />
                     <span>Dashboard</span>
                 </BaseButton>
-                <BaseButton color="transparent" to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
+                <BaseButton color="transparent" to="momentopnames" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'list-check']" />
                     <span>Momentopnames</span>
                 </BaseButton>
-                <BaseButton color="transparent">
+                <BaseButton color="transparent" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'route']" />
                     <span>Actieplan</span>
                 </BaseButton>
-                <BaseButton color="transparent">
+                <BaseButton color="transparent" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'circle-question']" />
                     <span>Kenniscentrum</span>
                 </BaseButton>
+                <BaseButton color="transparent" to="dashboard" class=" btn-upgrade">
+                    Upgrade
+                </BaseButton>
+
+                <div class="user-menu">
+                    <div class="profile-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <font-awesome-icon :icon="['fas', 'fa-circle-chevron-down']" />
+                </div>
             </div>
-            <div class="mobile-menu flex lg:hidden">
+            <div class="mobile-menu">
                 <BaseButton color="transparent">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                 </BaseButton>
