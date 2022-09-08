@@ -17,14 +17,12 @@
     }
 
     .router-link-active .btn {
-        &.active {
-            @apply text-opacity-90;
-            @apply bg-black;
-            @apply bg-opacity-20;
+        @apply text-opacity-90;
+        @apply bg-black;
+        @apply bg-opacity-20;
 
-            svg {
-                @apply text-orange-400;
-            }
+        svg {
+            @apply text-orange-400;
         }
     }
 }

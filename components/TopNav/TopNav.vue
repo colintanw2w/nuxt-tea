@@ -20,13 +20,13 @@ const isActive = (name: string) => {
         <div class="content-container flex-1">
             Teamdriver nav bar thing
             <NuxtLink to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
-                <BaseButton color="transparent" :class="isActive('dashboard') ? 'active' : ''">
+                <BaseButton color="transparent">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                     Dashboard
                 </BaseButton>
             </NuxtLink>
             <NuxtLink to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
-                <BaseButton color="transparent" :class="isActive('momentopnames')? 'active': ''">
+                <BaseButton color="transparent">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                     Momentopnames
                 </BaseButton>
