@@ -49,17 +49,42 @@
     .user-menu {
         @apply flex justify-center items-center;
         @apply cursor-pointer;
+        @apply relative;
 
-        svg {
+        >svg {
             @apply text-white;
             @apply text-opacity-50;
             @apply ml-2;
+        }
+
+        .user-menu-dropdown {
+            @apply absolute right-0 top-11;
+            @apply bg-white;
+            @apply shadow-lg;
+            @apply rounded-lg;
+            @apply py-2;
+            @apply mt-2;
+            @apply w-48;
+            @apply z-10;
+
+            .user-menu-dropdown-item {
+                @apply px-4;
+                @apply py-2;
+                @apply text-sm;
+                @apply cursor-pointer;
+
+                &:hover {
+                    @apply text-orange-400;
+                }
+            }
         }
     }
 
     .profile-img-container {
         @apply w-10 h-10 rounded-full;
         @apply bg-gray-300;
+        @apply relative;
+        @apply overflow-hidden;
     }
 
     .default-menu {

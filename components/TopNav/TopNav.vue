@@ -11,12 +11,6 @@ const props = defineProps<{
 defineExpose({
     user: props.user
 });
-const route = useRoute();
-
-const isActive = (name: string) => {
-    return route.name === name;
-};
-
 </script>
 
 <template>
@@ -46,13 +40,7 @@ const isActive = (name: string) => {
                 <BaseButton color="transparent" to="dashboard" class=" btn-upgrade">
                     Upgrade
                 </BaseButton>
-
-                <div class="user-menu">
-                    <div class="profile-img-container">
-                        <img src="" alt="">
-                    </div>
-                    <font-awesome-icon :icon="['fas', 'fa-circle-chevron-down']" />
-                </div>
+                <TopNavUserMenu />
             </div>
             <div class="mobile-menu">
                 <BaseButton color="transparent">
