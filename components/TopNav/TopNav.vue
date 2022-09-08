@@ -24,22 +24,24 @@ const isActive = (name: string) => {
             <NuxtLink to="dashboard">
                 <TdLogo class="top-nav-logo" />
             </NuxtLink>
-            <BaseButton color="transparent" to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
-                <font-awesome-icon :icon="['fas', 'grip-vertical']" />
-                Dashboard
-            </BaseButton>
-            <BaseButton color="transparent" to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
-                <font-awesome-icon :icon="['fas', 'list-check']" />
-                Momentopnames
-            </BaseButton>
-            <BaseButton color="transparent">
-                <font-awesome-icon :icon="['fas', 'route']" />
-                Actieplan
-            </BaseButton>
-            <BaseButton color="transparent">
-                <font-awesome-icon :icon="['fas', 'circle-question']" />
-                Kenniscentrum
-            </BaseButton>
+            <div class="hidden lg:flex">
+                <BaseButton color="transparent" to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
+                    <font-awesome-icon :icon="['fas', 'grip-vertical']" />
+                    Dashboard
+                </BaseButton>
+                <BaseButton color="transparent" to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
+                    <font-awesome-icon :icon="['fas', 'list-check']" />
+                    Momentopnames
+                </BaseButton>
+                <BaseButton color="transparent">
+                    <font-awesome-icon :icon="['fas', 'route']" />
+                    Actieplan
+                </BaseButton>
+                <BaseButton color="transparent">
+                    <font-awesome-icon :icon="['fas', 'circle-question']" />
+                    Kenniscentrum
+                </BaseButton>
+            </div>
         </div>
     </nav>
 </template>
