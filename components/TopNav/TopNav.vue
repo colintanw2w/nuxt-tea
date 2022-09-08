@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// import IconComponent from './my-icon.svg?component'
+
+import TdLogo from '@/assets/svg/td_logo_diap.svg?component';
 
 const props = defineProps<{
     user?: string
@@ -17,26 +20,28 @@ const isActive = (name: string) => {
 
 <template>
     <nav class="top-nav">
-        <div class="content-container flex-1">
-            Teamdriver nav bar thing
+        <div class="content-container flex-1 flex items-center">
+            <NuxtLink to="dashboard">
+                <TdLogo class="top-nav-logo" />
+            </NuxtLink>
             <NuxtLink to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
                 <BaseButton color="transparent">
-                    <font-awesome-icon :icon="['fas', 'bars']" />
+                    <font-awesome-icon :icon="['fas', 'grip-vertical']" />
                     Dashboard
                 </BaseButton>
             </NuxtLink>
             <NuxtLink to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
                 <BaseButton color="transparent">
-                    <font-awesome-icon :icon="['fas', 'bars']" />
+                    <font-awesome-icon :icon="['fas', 'list-check']" />
                     Momentopnames
                 </BaseButton>
             </NuxtLink>
             <BaseButton color="transparent">
-                <font-awesome-icon :icon="['fas', 'bars']" />
+                <font-awesome-icon :icon="['fas', 'route']" />
                 Actieplan
             </BaseButton>
             <BaseButton color="transparent">
-                <font-awesome-icon :icon="['fas', 'bars']" />
+                <font-awesome-icon :icon="['fas', 'circle-question']" />
                 Kenniscentrum
             </BaseButton>
         </div>

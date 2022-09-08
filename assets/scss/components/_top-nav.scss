@@ -4,6 +4,11 @@
     @apply flex items-center bg-blue-400;
     height: 4.5rem;
 
+    .top-nav-logo {
+        margin-top: -0.5rem;
+        @apply w-40;
+    }
+
     .btn {
         @apply ml-2;
         @apply text-white;
