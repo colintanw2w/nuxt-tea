@@ -19,9 +19,39 @@ const sidebar = useSidebar();
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
                     <button @click="sidebar.toggle()">
                         toggle sidebar
                     </button>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
+                    <p>placeholder page for Dashboard</p>
                 </BaseBox>
             </div>
             <div>

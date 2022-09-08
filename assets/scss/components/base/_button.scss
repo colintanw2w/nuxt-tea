@@ -5,6 +5,7 @@ $map: (
 
 .btn {
     @apply border-0 px-4 py-3 rounded;
+    @apply flex items-center justify-center;
 
     @each $name,
     $val in $map {
@@ -29,7 +30,7 @@ $map: (
         }
     }
 
-    svg {
-        @apply mr-2;
+    svg+span {
+        @apply ml-2;
     }
 }

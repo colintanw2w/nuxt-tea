@@ -1,12 +1,35 @@
 @use "~scss/abstracts/_colors.scss";
 
 .top-nav {
-    @apply flex items-center bg-blue-400;
+    @apply flex items-center bg-blue-400 relative;
     height: 4.5rem;
 
-    .top-nav-logo {
+    .top-nav-logo-sm {
         margin-top: -0.5rem;
-        @apply w-40;
+        height: 30px;
+        @apply hidden;
+
+        @screen lg {
+            @apply block;
+        }
+
+        @screen 2xl {
+            @apply hidden;
+        }
+    }
+
+    .top-nav-logo-lg {
+        margin-top: -0.5rem;
+        height: 30px;
+        @apply block;
+
+        @screen lg {
+            @apply hidden;
+        }
+
+        @screen 2xl {
+            @apply block;
+        }
     }
 
     .btn {
@@ -28,6 +51,14 @@
 
         svg {
             @apply text-orange-400;
+        }
+    }
+
+    .mobile-menu {
+        @apply ml-auto;
+
+        .btn {
+            @apply ml-0;
         }
     }
 }

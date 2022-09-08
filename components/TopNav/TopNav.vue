@@ -1,7 +1,8 @@
 <script setup lang="ts">
 // import IconComponent from './my-icon.svg?component'
 
-import TdLogo from '@/assets/svg/td_logo_diap.svg?component';
+import TdLogoLarge from '@/assets/svg/td_logo_diap.svg?component';
+import TdLogoSmall from '@/assets/svg/td_logomark.svg?component';
 
 const props = defineProps<{
     user?: string
@@ -22,24 +23,30 @@ const isActive = (name: string) => {
     <nav class="top-nav">
         <div class="content-container flex-1 flex items-center">
             <NuxtLink to="dashboard">
-                <TdLogo class="top-nav-logo" />
+                <TdLogoSmall class="top-nav-logo-sm" />
+                <TdLogoLarge class="top-nav-logo-lg" />
             </NuxtLink>
-            <div class="hidden lg:flex">
+            <div class="default-menu hidden lg:flex">
                 <BaseButton color="transparent" to="dashboard" :aria-current="isActive('dashboard') ? 'page' : ''">
                     <font-awesome-icon :icon="['fas', 'grip-vertical']" />
-                    Dashboard
+                    <span>Dashboard</span>
                 </BaseButton>
                 <BaseButton color="transparent" to="momentopnames" :aria-current="isActive('momentopnames') ? 'page' : ''">
                     <font-awesome-icon :icon="['fas', 'list-check']" />
-                    Momentopnames
+                    <span>Momentopnames</span>
                 </BaseButton>
                 <BaseButton color="transparent">
                     <font-awesome-icon :icon="['fas', 'route']" />
-                    Actieplan
+                    <span>Actieplan</span>
                 </BaseButton>
                 <BaseButton color="transparent">
                     <font-awesome-icon :icon="['fas', 'circle-question']" />
-                    Kenniscentrum
+                    <span>Kenniscentrum</span>
+                </BaseButton>
+            </div>
+            <div class="mobile-menu flex lg:hidden">
+                <BaseButton color="transparent">
+                    <font-awesome-icon :icon="['fas', 'bars']" />
                 </BaseButton>
             </div>
         </div>
