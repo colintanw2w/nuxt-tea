@@ -19,7 +19,8 @@ $teamsSidebarWidth: 250px;
   @apply bg-blue-500;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 0.25rem; /* value not supported by Tailwind */
+  border-radius: 0.25rem;
+  /* value not supported by Tailwind */
   color: #ffffff;
 
   &:before {
@@ -48,5 +49,5 @@ $teamsSidebarWidth: 250px;
 }
 
 .teams-sidebar .add-block:hover {
-  @apply bg-turqoise;
+  @apply bg-turquoise;
 }

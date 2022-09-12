@@ -45,8 +45,17 @@ const sidebar = useSidebar();
                     </button>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
+                    <p>
+                        placeholder page
+                        <BaseTag color="blue">
+                            Taggie
+                        </BaseTag> for Dashboard
+                    </p>
+                    <p>
+                        placeholder page <BaseTag color="turquoise">
+                            Taggie
+                        </BaseTag> for Dashboardfor Dashboard
+                    </p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>

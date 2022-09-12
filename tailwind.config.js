@@ -15,7 +15,8 @@ module.exports = {
                 500: 'hsl(var(--td-color-blue-500), <alpha-value>)' /* teams sidebar block default color */,
                 400: 'hsl(var(--td-color-blue-400), <alpha-value>)' /* topnav color, login background color */,
                 300: 'hsl(var(--td-color-blue-300), <alpha-value>)' /* text color, Teams sidebar active team border */,
-                200: 'hsl(var(--td-color-blue-200), <alpha-value>)' /* top nav text color */
+                200: 'hsl(var(--td-color-blue-200), <alpha-value>)' /* top nav text color */,
+                100: 'hsl(var(--td-color-blue-100), <alpha-value>)' /* tag color */
             },
             gray: {
                 300: 'hsl(var(--td-color-gray-300), <alpha-value>)' /* TODO: forgot */,
@@ -27,10 +28,11 @@ module.exports = {
                 500: 'hsl(var(--td-color-orange-500), <alpha-value>)',
                 400: 'hsl(var(--td-color-orange-400), <alpha-value>)'
             },
-            turqoise: {
+            turquoise: {
                 DEFAULT:
           'hsl(var(--td-color-turquoise-400), <alpha-value>)' /* check marks in plan selection */,
-                400: 'hsl(var(--td-color-turquoise-400), <alpha-value>)' /* check marks in plan selection */
+                400: 'hsl(var(--td-color-turquoise-400), <alpha-value>)' /* check marks in plan selection */,
+                100: 'hsl(var(--td-color-turquoise-100), <alpha-value>)' /* check marks in plan selection */
             },
             // color aliases for easy use
             border: 'hsl(var(--td-color-gray-200), <alpha-value>)',
