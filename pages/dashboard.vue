@@ -16,27 +16,6 @@ const sidebar = useSidebar();
                         Jouw Driver Profiel
                     </h2>
                     <p>placeholder page for Dashboard</p>
-                    <BaseButton color="white">
-                        White
-                    </BaseButton>
-                    <BaseButton color="orange">
-                        Orange
-                    </BaseButton>
-                    <BaseButton color="blue">
-                        Blue
-                    </BaseButton>
-                    <BaseButton color="orange" inverted>
-                        inverted orange
-                    </BaseButton>
-                    <BaseButton color="blue" inverted>
-                        inverted blue
-                    </BaseButton>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
-                    <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>
@@ -92,12 +71,6 @@ const sidebar = useSidebar();
                     </p>
                     <BaseButton color="white">
                         Vraag een expert
-                    </BaseButton>
-                    <BaseButton color="white" inverted>
-                        inverted white
-                    </BaseButton>
-                    <BaseButton color="white" inverted style="--btn-color: red; --btn-color-hover: purple;">
-                        inverted white with custom --btn-color variable
                     </BaseButton>
                 </BaseBox>
             </div>

@@ -21,11 +21,11 @@ defineExpose({
                 <TdLogoLarge class="top-nav-logo logo-lg" />
             </NuxtLink>
             <div class="default-menu">
-                <BaseButton color="transparent" to="dashboard" class="nav-link">
+                <BaseButton color="transparent" to="/dashboard" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'grip-vertical']" />
                     <span>Dashboard</span>
                 </BaseButton>
-                <BaseButton color="transparent" to="momentopnames" class="nav-link">
+                <BaseButton color="transparent" to="/momentopnames" class="nav-link">
                     <font-awesome-icon :icon="['fas', 'list-check']" />
                     <span>Momentopnames</span>
                 </BaseButton>
@@ -33,11 +33,11 @@ defineExpose({
                     <font-awesome-icon :icon="['fas', 'route']" />
                     <span>Actieplan</span>
                 </BaseButton>
-                <BaseButton color="transparent" class="nav-link">
+                <BaseButton color="transparent" class="nav-link" to="/examples">
                     <font-awesome-icon :icon="['fas', 'circle-question']" />
                     <span>Kenniscentrum</span>
                 </BaseButton>
-                <BaseButton color="transparent" to="dashboard" class=" btn-upgrade">
+                <BaseButton color="transparent" to="/dashboard" class=" btn-upgrade">
                     Upgrade
                 </BaseButton>
                 <TopNavUserMenu />

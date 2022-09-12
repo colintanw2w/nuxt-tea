@@ -21,10 +21,8 @@ const props = withDefaults(defineProps<Props>(), {
     required: false,
     small: false
 });
-
-const generatedId = computed(() => {
-    return props.id || Date.now() + '-' + Math.floor(Math.random() * 900);
-});
+const { nextId } = useId('login-input-');
+const generatedId = nextId();
 
 </script>
 <template>

@@ -13,6 +13,9 @@ const submit = () => {
     // return navigateTo('/dashboard')
     router.push({ path: '/dashboard' });
 };
+
+const { nextId } = useId('submit-input-');
+const generatedId = nextId();
 </script>
 
 <template>
@@ -22,7 +25,7 @@ const submit = () => {
         </h1>
         <FormTextInput type="text" placeholder="E-mail" data-attr="haha" />
         <FormTextInput type="password" placeholder="Wachtwoord" />
-        <BaseButton color="orange" full @click="submit">
+        <BaseButton :id="generatedId" color="orange" full @click="submit">
             Inloggen
         </BaseButton>
     </div>
