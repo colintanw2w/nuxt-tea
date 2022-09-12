@@ -34,24 +34,12 @@
         }
     }
 
-    .btn {
-        @apply ml-2;
-        @apply text-white;
-        @apply text-opacity-60;
-
-        &:hover {
-            svg {
-                @apply text-orange-400;
-            }
-        }
-    }
-
     .user-menu {
         @apply flex justify-center items-center;
         @apply cursor-pointer;
         @apply relative;
 
-        >svg {
+        > svg {
             @apply text-white;
             @apply text-opacity-50;
             @apply ml-2;
@@ -80,11 +68,34 @@
         }
     }
 
+    .btn {
+        @apply ml-2;
+        @apply text-white;
+        @apply text-opacity-60;
+
+        &:hover {
+            svg {
+                @apply text-orange-400;
+            }
+        }
+    }
+
     .profile-img-container {
         @apply w-10 h-10 rounded-full;
         @apply bg-gray-300;
         @apply relative;
         @apply overflow-hidden;
+    }
+
+    .mobile-menu > .router-link-active.btn,
+    .default-menu > .nav-link.router-link-active.btn {
+        @apply text-opacity-90;
+        @apply bg-black;
+        @apply bg-opacity-20;
+
+        svg {
+            @apply text-orange-400;
+        }
     }
 
     .default-menu {
@@ -105,17 +116,6 @@
 
         .btn {
             @apply ml-0;
-        }
-    }
-
-    .default-menu>.nav-link.router-link-active.btn,
-    .mobile-menu>.router-link-active.btn {
-        @apply text-opacity-90;
-        @apply bg-black;
-        @apply bg-opacity-20;
-
-        svg {
-            @apply text-orange-400;
         }
     }
 
