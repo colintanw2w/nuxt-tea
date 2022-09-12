@@ -1,23 +1,63 @@
 $map: (
-    "orange": (orange-400, orange-500),
-    "blue": (blue-400, blue-500)
+    "orange": (orange-400, orange-500, white, white),
+    "blue": (blue-400, blue-500, white, white),
+    "white": (white, gray-100, blue-400, blue-400),
 );
 
-.btn {
+.btn,
+button.btn,
+[type='button'].btn,
+[type='reset'].btn,
+[type='submit'].btn {
+    --btn-bg: hsl(var(--td-color-blue-400), var(--tw-bg-opacity));
+    --btn-bg-hover: hsl(var(--td-color-blue-500), var(--tw-bg-opacity));
+    --btn-color: var(--td-color-white);
+    --btn-color-hover: var(--td-color-white);
+
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
     @apply border-0 px-4 py-3 rounded;
-    @apply flex items-center justify-center;
+    @apply inline-flex items-center justify-center;
+
+    &:hover {
+        background-color: var(--btn-bg-hover);
+        color: var(--btn-color-hover);
+    }
 
     @each $name,
     $val in $map {
         /* stylelint-disable scss/no-global-function-names */
-        $default: nth($val, 1);
+        $bgColor: nth($val, 1);
         $hover: nth($val, 2);
+        $text: nth($val, 3);
+        $hoverText: nth($val, 4);
         /* stylelint-enable scss/no-global-function-names */
 
         &.btn-#{$name} {
-            @apply bg-#{$default};
-            @apply text-white;
-            @apply hover:bg-#{$hover};
+            --btn-bg: hsl(var(--td-color-#{$bgColor}), var(--tw-bg-opacity));
+            --btn-color: hsl(var(--td-color-#{$text}), var(--tw-text-opacity));
+            --btn-bg-hover: hsl(var(--td-color-#{$hover}), var(--tw-bg-opacity));
+            --btn-color-hover: hsl(var(--td-color-#{$hoverText}), var(--tw-text-opacity));
+        }
+
+        &.btn-#{$name}.btn-inverted {
+            --btn-bg: hsl(var(--td-color-transparent));
+            --btn-color: hsl(var(--td-color-#{$bgColor}), var(--tw-bg-opacity));
+            --btn-bg-hover: hsl(var(--td-color-#{$bgColor}), var(--tw-bg-opacity));
+            --btn-color-hover: hsl(var(--td-color-#{$text}), var(--tw-text-opacity));
+            @apply border-2;
+            // padding for inverted buttons is custom because it needs to be padding - border width
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+            ;
+            background-color: var(--td-color-transparent);
+            border-color: var(--btn-bg-hover);
+            color: var(--btn-color);
+
+            &:hover {
+                background-color: var(--btn-bg-hover);
+                color: var(--btn-color-hover);
+            }
         }
     }
 

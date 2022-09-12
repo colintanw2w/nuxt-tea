@@ -7,8 +7,8 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
-            white: '#ffffff',
-            black: '#000000',
+            white: 'hsl(var(--td-color-white), <alpha-value>)',
+            black: 'hsl(var(--td-color-black), <alpha-value>)',
             blue: {
                 DEFAULT: 'hsl(var(--td-color-blue-400), <alpha-value>)',
                 600: 'hsl(var(--td-color-blue-600), <alpha-value>)' /* heading, teams bar */,

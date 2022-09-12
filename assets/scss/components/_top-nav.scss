@@ -123,6 +123,7 @@
         @apply ml-auto mr-5 border-2;
         @apply border-white border-opacity-25;
         @apply text-white;
-        @apply py-2;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
     }
 }

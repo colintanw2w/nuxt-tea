@@ -1,24 +1,27 @@
 <script setup lang="ts">
 
-type Color = 'orange' | 'blue' | 'transparent';
+type Color = 'orange' | 'blue' | 'white' | 'transparent';
 interface Props {
     color?: Color;
     full?: boolean;
     variant?: 'button' | 'link';
     to?: string;
+    inverted?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    color: 'orange',
+    color: 'blue',
     full: false,
     variant: 'button',
-    to: null
+    to: null,
+    inverted: false
 });
 
 const cssClasses = computed(() => {
-    const colorClass = 'btn-' + props.color;
+    const colorClass = props.color ? 'btn-' + props.color : '';
     const widthClass = props.full ? 'w-full' : '';
-    return colorClass + ' ' + widthClass;
+    const invertedClass = props.inverted ? 'btn-inverted' : '';
+    return colorClass + ' ' + widthClass + '' + invertedClass;
 });
 </script>
 
