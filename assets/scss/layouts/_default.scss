@@ -1,23 +1,23 @@
 .default-layout {
-  @apply min-h-screen w-screen overflow-hidden;
-  @apply bg-white;
-
-  .teams-sidebar {
-    @apply transition-transform duration-200 ease-in-out;
-    @apply -translate-x-full;
-  }
-
-  main {
-    @apply transition-all duration-200 ease-in-out;
-  }
-
-  &.sidebar-open {
-    main {
-      margin-left: 4.5rem; /* depends on teams-sidebar width */
-    }
+    @apply min-h-screen w-screen overflow-hidden;
+    @apply bg-white;
 
     .teams-sidebar {
-      transform: translateX(0);
+        @apply transition-transform duration-200 ease-in-out;
+        @apply -translate-x-full;
     }
-  }
+
+    main {
+        @apply transition-all duration-200 ease-in-out;
+    }
+
+    &.sidebar-open {
+        main {
+            margin-left: 4.5rem; /* depends on teams-sidebar width */
+        }
+
+        .teams-sidebar {
+            transform: translateX(0);
+        }
+    }
 }

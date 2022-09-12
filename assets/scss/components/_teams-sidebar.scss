@@ -3,51 +3,51 @@
 $teamsSidebarWidth: 250px;
 
 .teams-sidebar {
-  @apply fixed top-0 left-0 bottom-0 overflow-auto;
-  @apply flex flex-col items-center;
-  @apply pt-2;
-  @apply bg-blue-600;
-  width: 4.5rem;
+    @apply fixed top-0 left-0 bottom-0 overflow-auto;
+    @apply flex flex-col items-center;
+    @apply pt-2;
+    @apply bg-blue-600;
+    width: 4.5rem;
 }
 
 .teams-sidebar .team-block,
 .teams-sidebar .add-block {
-  @apply aspect-square m-2;
-  @apply flex justify-center items-center;
-  @apply relative;
-  @apply cursor-pointer;
-  @apply bg-blue-500;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.25rem;
-  /* value not supported by Tailwind */
-  color: #ffffff;
+    @apply aspect-square m-2;
+    @apply flex justify-center items-center;
+    @apply relative;
+    @apply cursor-pointer;
+    @apply bg-blue-500;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    /* value not supported by Tailwind */
+    color: #ffffff;
 
-  &:before {
-    border-radius: 8px;
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border: 2px solid transparent;
-  }
-
-  &:hover {
     &:before {
-      @apply border-blue-400;
+        border-radius: 8px;
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        border: 2px solid transparent;
     }
-  }
 
-  &.active {
-    &:before {
-      @apply border-blue-300;
+    &:hover {
+        &:before {
+            @apply border-blue-400;
+        }
     }
-  }
+
+    &.active {
+        &:before {
+            @apply border-blue-300;
+        }
+    }
 }
 
 .teams-sidebar .add-block:hover {
-  @apply bg-turquoise;
+    @apply bg-turquoise;
 }

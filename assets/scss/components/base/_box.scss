@@ -9,7 +9,7 @@ $map: (
     @apply p-8;
 
     @each $color,
-    $val in $map {
+        $val in $map {
         &.#{$color} {
             @apply #{$val};
         }

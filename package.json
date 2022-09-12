@@ -7,6 +7,8 @@
     "preview": "nuxt preview",
     "lint:scripts": "eslint . --ext .ts",
     "lint:styles": "stylelint \"assets/scss/**/*.scss\"",
+    "fix:scripts": "eslint . --ext .ts --fix",
+    "fix:styles": "stylelint \"assets/scss/**/*.scss\" --fix",
     "lint": "npm run lint:scripts && npm run lint:styles"
   },
   "devDependencies": {

@@ -1,23 +1,22 @@
 .base-tag {
-  @apply inline-block;
-  @apply px-3 py-2;
-  @apply rounded;
-  @apply text-sm;
-  @apply font-bold;
-  // @apply uppercase;
-  @apply text-white;
-  @apply font-header;
-  @apply tracking-wider;
+    @apply inline-block;
+    @apply px-3 py-2;
+    @apply rounded;
+    @apply text-sm;
+    @apply font-bold;
+    @apply text-white;
+    @apply font-header;
+    @apply tracking-wider;
 
-  @apply hover:underline;
+    @apply hover:underline;
 
-  &.base-tag-color-blue {
-    @apply bg-blue-100;
-    @apply text-blue-500;
-  }
+    &.base-tag-color-blue {
+        @apply bg-blue-100;
+        @apply text-blue-500;
+    }
 
-  &.base-tag-color-turquoise {
-    @apply bg-turquoise-100;
-    @apply text-turquoise-400;
-  }
+    &.base-tag-color-turquoise {
+        @apply bg-turquoise-100;
+        @apply text-turquoise-400;
+    }
 }

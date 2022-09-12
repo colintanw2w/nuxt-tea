@@ -18,7 +18,7 @@
     :root {
 
         @each $name,
-        $val in colors.$map {
+            $val in colors.$map {
             --td-color-#{$name}: #{$val};
         }
     }
