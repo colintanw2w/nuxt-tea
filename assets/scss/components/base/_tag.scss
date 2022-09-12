@@ -8,11 +8,9 @@
     @apply font-header;
     @apply tracking-wider;
 
-    @apply hover:underline;
-
     &.base-tag-color-blue {
         @apply bg-blue-100;
-        @apply text-blue-500;
+        @apply text-blue-400;
     }
 
     &.base-tag-color-turquoise {

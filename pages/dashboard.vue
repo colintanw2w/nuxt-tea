@@ -49,12 +49,13 @@ const sidebar = useSidebar();
                         placeholder page
                         <BaseTag color="blue">
                             Taggie
+                        </BaseTag>
+                        <BaseTag color="turquoise">
+                            Taggie
                         </BaseTag> for Dashboard
                     </p>
                     <p>
-                        placeholder page <BaseTag color="turquoise">
-                            Taggie
-                        </BaseTag> for Dashboardfor Dashboard
+                        placeholder page for Dashboardfor Dashboard
                     </p>
                     <p>placeholder page for Dashboard</p>
                     <p>placeholder page for Dashboard</p>

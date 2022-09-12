@@ -1,14 +1,15 @@
-@use "abstracts/colors";
-@use "base/typography";
-@use "layouts/default";
-@use "layouts/login";
+@use 'abstracts/colors';
+@use 'base/typography';
+@use 'layouts/default';
+@use 'layouts/login';
 
-@use "components/base/box";
-@use "components/base/button";
-@use "components/base/tag";
-@use "components/teams-sidebar";
-@use "components/top-nav";
-@use "components/forms/text-input";
+@use 'components/base/box';
+@use 'components/base/button';
+@use 'components/base/tag';
+@use 'components/teams-sidebar';
+@use 'components/top-nav';
+@use 'components/profile-image';
+@use 'components/forms/text-input';
 
 @tailwind base;
 @tailwind components;
@@ -16,9 +17,7 @@
 
 @layer base {
     :root {
-
-        @each $name,
-            $val in colors.$map {
+        @each $name, $val in colors.$map {
             --td-color-#{$name}: #{$val};
         }
     }

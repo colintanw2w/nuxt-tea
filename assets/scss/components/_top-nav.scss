@@ -80,13 +80,6 @@
         }
     }
 
-    .profile-img-container {
-        @apply w-10 h-10 rounded-full;
-        @apply bg-gray-300;
-        @apply relative;
-        @apply overflow-hidden;
-    }
-
     .mobile-menu > .router-link-active.btn,
     .default-menu > .nav-link.router-link-active.btn {
         @apply text-opacity-90;

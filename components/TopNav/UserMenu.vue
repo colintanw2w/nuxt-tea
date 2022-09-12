@@ -12,10 +12,8 @@ onClickOutside(el, () => { isOpen.value = false; });
 
 <template>
     <div ref="el" class="user-menu" @click="isOpen = !isOpen">
-        <div class="profile-img-container">
-            <img src="https://www.fillmurray.com/360/360" alt="" srcset="">
-        </div>
-        <font-awesome-icon :icon="['fas', chevronClass]" />
+        <ProfileImage url="https://www.fillmurray.com/360/360" />
+        <font-awesome-icon :icon="['fas', chevronClass]" alt="profile image" />
         <TopNavUserMenuDropdown v-if="isOpen" />
     </div>
 </template>
