@@ -1,4 +1,4 @@
-@use "~scss/abstracts/_colors.scss";
+@use '~scss/abstracts/_colors.scss';
 
 $teamsSidebarWidth: 250px;
 
@@ -19,13 +19,12 @@ $teamsSidebarWidth: 250px;
     @apply bg-blue-500;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 0.25rem;
-    /* value not supported by Tailwind */
+    border-radius: 0.25rem; /* value not supported by Tailwind */
     color: #ffffff;
 
-    &:before {
+    &::before {
         border-radius: 8px;
-        content: " ";
+        content: ' ';
         position: absolute;
         z-index: -1;
         top: -4px;
