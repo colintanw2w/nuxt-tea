@@ -45,6 +45,18 @@
             @apply ml-2;
         }
 
+        .user-first-name {
+            @apply text-white;
+            @apply text-sm;
+            @apply ml-4;
+            @apply text-ellipsis overflow-hidden;
+            max-width: 4rem;
+
+            @screen xl {
+                max-width: 8rem;
+            }
+        }
+
         .user-menu-dropdown {
             @apply absolute right-0 top-11;
             @apply bg-white;
