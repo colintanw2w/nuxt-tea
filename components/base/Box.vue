@@ -2,14 +2,22 @@
     type Color = 'orange' | 'blue' | 'transparent';
     interface Props {
         color?: Color;
+        slim?: boolean;
     }
 
 const props = withDefaults(defineProps<Props>(), {
-    color: 'transparent'
+    color: 'transparent',
+    slim: false
 });
 
 const cssClasses = computed(() => {
-    return props.color ?? 'transparent';
+    const colorClass = props.color;
+
+    return {
+        'base-box': true,
+        'base-box--slim': props.slim,
+        [`base-box--${colorClass}`]: true
+    };
 });
 </script>
 

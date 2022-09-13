@@ -1,17 +1,20 @@
 $map: (
-    "blue": bg-blue-400/7,
-    "orange": bg-orange-400/7,
-    "transparent": bg-transparent border border-border,
+    'blue': bg-blue-400/7,
+    'orange': bg-orange-400/7,
+    'transparent': bg-transparent border border-border,
 );
 
 .base-box {
     @apply rounded-lg;
     @apply p-8;
 
-    @each $color,
-        $val in $map {
-        &.#{$color} {
+    @each $color, $val in $map {
+        &--#{$color} {
             @apply #{$val};
         }
+    }
+
+    &--slim {
+        @apply p-4;
     }
 }
