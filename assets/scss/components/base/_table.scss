@@ -1,0 +1,38 @@
+.base-table {
+    &__header {
+        @apply block;
+
+        .base-table__col {
+            @apply cursor-pointer;
+            @apply text-sm;
+
+            @media screen and (max-width: 1023px) {
+                @apply w-full;
+                @apply justify-between;
+                @apply py-2;
+                @apply border-b border-border;
+            }
+        }
+
+        .svg-inline--fa {
+            @apply pl-2;
+        }
+    }
+
+    &__row {
+        @apply block;
+        @apply mb-2;
+
+        @screen lg {
+            @apply flex flex-row flex-wrap;
+        }
+    }
+
+    &__col {
+        @apply inline-flex flex-grow-0 flex-shrink-0 flex-auto items-center;
+
+        &--sorted {
+            @apply font-header;
+        }
+    }
+}

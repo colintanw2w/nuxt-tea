@@ -40,7 +40,7 @@ const sort = () => {
 
 </script>
 <template>
-    <div :class="{ 'col-sortable': sortable, 'col-sorted': isSorted }" class="cards-table-col" @click="sort">
+    <div :class="{ 'base-table__col--sortable': sortable, 'base-table__col--sorted': isSorted }" class="base-table__col" @click="sort">
         <slot />
         <font-awesome-icon v-if="sortable" :icon="['fas', sortIndicator]" />
     </div>

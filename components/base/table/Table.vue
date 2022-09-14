@@ -10,11 +10,11 @@ const props = withDefaults(defineProps<Props>(), {
 });
 </script>
 <template>
-    <div class="cards-table" :class="{ 'cards-table-flexible': flexible }">
-        <div v-if="$slots.header" class="cards-table-header">
+    <div class="base-table" :class="{ 'base-table-flexible': flexible }">
+        <div v-if="$slots.header" class="base-table__header">
             <slot name="header" />
         </div>
-        <div class="cards-table-body">
+        <div class="base-table-body">
             <slot />
         </div>
     </div>
