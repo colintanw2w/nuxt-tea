@@ -1,12 +1,16 @@
 <script setup lang="ts">
-// import IconComponent from './my-icon.svg?component'
-
+import { onClickOutside } from '@vueuse/core';
 import TdLogoLarge from '@/assets/svg/td_logo_diap.svg?component';
 import TdLogoSmall from '@/assets/svg/td_logomark.svg?component';
 
 const props = defineProps<{
     user?: string
 }>();
+
+const el = ref();
+const isOpen = ref(false);
+
+onClickOutside(el, () => { isOpen.value = false; });
 
 defineExpose({
     user: props.user
@@ -16,36 +20,24 @@ defineExpose({
 <template>
     <nav class="top-nav">
         <div class="content-container flex-1 flex items-center">
-            <NuxtLink to="dashboard">
-                <TdLogoSmall class="top-nav-logo logo-sm" />
-                <TdLogoLarge class="top-nav-logo logo-lg" />
+            <NuxtLink to="dashboard" class="top-nav__logo">
+                <TdLogoSmall class="top-nav__svg top-nav__svg--sm" />
+                <TdLogoLarge class="top-nav__svg top-nav__svg--lg" />
             </NuxtLink>
-            <div class="default-menu">
-                <BaseButton color="transparent" to="/dashboard" class="nav-link">
-                    <font-awesome-icon :icon="['fas', 'grip-vertical']" />
-                    <span>Dashboard</span>
-                </BaseButton>
-                <BaseButton color="transparent" to="/momentopnames" class="nav-link">
-                    <font-awesome-icon :icon="['fas', 'list-check']" />
-                    <span>Momentopnames</span>
-                </BaseButton>
-                <BaseButton color="transparent" class="nav-link">
-                    <font-awesome-icon :icon="['fas', 'route']" />
-                    <span>Actieplan</span>
-                </BaseButton>
-                <BaseButton color="transparent" class="nav-link" to="/examples">
-                    <font-awesome-icon :icon="['fas', 'circle-question']" />
-                    <span>Kenniscentrum</span>
-                </BaseButton>
-                <BaseButton color="transparent" to="/dashboard" class=" btn-upgrade">
-                    Upgrade
-                </BaseButton>
-                <TopNavUserMenu />
-            </div>
-            <div class="mobile-menu">
-                <BaseButton color="transparent">
+
+            <TopNavItems class="default-menu" />
+
+            <BaseButton color="transparent" to="/dashboard" class="top-nav__btn-upgrade">
+                Upgrade
+            </BaseButton>
+
+            <TopNavUserMenu />
+
+            <div ref="el" class="">
+                <BaseButton color="transparent" @click="isOpen = !isOpen">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                 </BaseButton>
+                <TopNavItems v-if="isOpen" class="mobile-menu" />
             </div>
         </div>
     </nav>

@@ -4,13 +4,17 @@
     @apply flex items-center bg-blue-400 relative;
     height: 4.5rem;
 
-    .top-nav-logo {
+    &__logo {
+        @apply mr-auto;
+    }
+
+    &__svg {
         @apply -mt-2;
         @apply mr-5;
         height: 30px;
     }
 
-    .logo-sm {
+    &__svg--sm {
         @apply hidden;
 
         @screen lg {
@@ -22,7 +26,7 @@
         }
     }
 
-    .logo-lg {
+    &__svg--lg {
         @apply block;
 
         @screen lg {
@@ -30,6 +34,19 @@
         }
 
         @screen xl {
+            @apply block;
+        }
+    }
+
+    &__btn-upgrade {
+        @apply ml-auto mr-5 border-2;
+        @apply border-white border-opacity-25;
+        @apply text-white;
+        @apply hidden;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+
+        @screen sm {
             @apply block;
         }
     }
@@ -50,7 +67,12 @@
             @apply text-sm;
             @apply ml-4;
             @apply text-ellipsis overflow-hidden;
-            max-width: 4rem;
+            @apply hidden;
+
+            @screen lg {
+                @apply block;
+                max-width: 4rem;
+            }
 
             @screen xl {
                 max-width: 8rem;
@@ -112,23 +134,24 @@
     }
 
     .mobile-menu {
-        @apply flex;
-        @apply ml-auto;
+        @apply bg-blue-400;
+        @apply absolute;
+        @apply block;
+        @apply top-16 left-0;
+        @apply w-full;
+        @apply block;
 
         @screen lg {
             @apply hidden;
         }
 
         .btn {
-            @apply ml-0;
-        }
-    }
+            @apply block;
+            @apply mr-2;
 
-    .btn-upgrade {
-        @apply ml-auto mr-5 border-2;
-        @apply border-white border-opacity-25;
-        @apply text-white;
-        padding-top: 0.625rem;
-        padding-bottom: 0.625rem;
+            &:last-child {
+                @apply mb-2;
+            }
+        }
     }
 }
