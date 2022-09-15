@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue';
-
-export type sortObject = {
-    ascending: boolean;
-    column: string;
-};
+import type { sortObject } from '@/types/interfaces';
 
 interface Props {
     sortable?: string;

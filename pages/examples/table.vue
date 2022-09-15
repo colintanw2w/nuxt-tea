@@ -1,18 +1,34 @@
 <script setup lang="ts">
-import { sortObject } from '@/components/base/table/HeaderCol.vue';
-const tableState = reactive<sortObject>({
-    ascending: true,
-    column: 'firstname'
-});
 
-const sortData = (sortable: string) => {
-    if (sortable !== tableState.column) {
-        tableState.column = sortable;
-        tableState.ascending = true;
-    } else {
-        tableState.ascending = !tableState.ascending;
+const { tableState, sortedData, sort, set } = useTable();
+
+set([
+    {
+        firstname: 'Jan',
+        lastname: 'van Psdafasdf',
+        age: 13
+    },
+    {
+        firstname: 'Xavi',
+        lastname: 'Simons',
+        age: 20
+    },
+    {
+        firstname: 'Role',
+        lastname: 'Role',
+        age: 42
+    },
+    {
+        firstname: 'Jesse',
+        lastname: 'James',
+        age: 31
+    },
+    {
+        firstname: 'Jan',
+        lastname: 'van Psdafasdf',
+        age: 56
     }
-};
+]);
 
 </script>
 
@@ -24,38 +40,38 @@ const sortData = (sortable: string) => {
         <BaseTable>
             <template #header>
                 <BaseTableRow class="p-4">
-                    <BaseTableHeaderCol sortable="firstname" :sorting="tableState" class="lg:w-1/4" @sort="sortData">
+                    <BaseTableHeaderCol sortable="firstname" :sorting="tableState" class="lg:w-1/4" @sort="sort">
                         Firstname
                     </BaseTableHeaderCol>
-                    <BaseTableHeaderCol sortable="lastname" :sorting="tableState" class="lg:w-2/4" @sort="sortData">
+                    <BaseTableHeaderCol sortable="lastname" :sorting="tableState" class="lg:w-2/4" @sort="sort">
                         lastname
                     </BaseTableHeaderCol>
-                    <BaseTableHeaderCol sortable="age" :sorting="tableState" class="lg:w-1/4" @sort="sortData">
+                    <BaseTableHeaderCol sortable="age" :sorting="tableState" class="lg:w-1/4" @sort="sort">
                         Leeftijd
                     </BaseTableHeaderCol>
                 </BaseTableRow>
             </template>
 
-            <BaseTableRow slim box>
+            <BaseTableRow v-for="(item, index) in sortedData" :key="`table-row-${index}`" slim box>
                 <BaseTableCol is-label>
                     voornaam
                 </BaseTableCol>
                 <BaseTableCol has-label class="lg:w-1/4">
-                    Jaap
+                    {{ item.firstname }}
                 </BaseTableCol>
 
                 <BaseTableCol is-label>
                     achternaam
                 </BaseTableCol>
                 <BaseTableCol has-label class="lg:w-2/4">
-                    de Vries
+                    {{ item.lastname }}
                 </BaseTableCol>
 
                 <BaseTableCol is-label>
                     Leeftijd
                 </BaseTableCol>
                 <BaseTableCol has-label class="lg:w-1/4">
-                    78
+                    {{ item.age }}
                 </BaseTableCol>
             </BaseTableRow>
         </BaseTable>
