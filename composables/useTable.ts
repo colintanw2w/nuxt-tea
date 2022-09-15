@@ -6,6 +6,8 @@ export default function useTable () {
         column: 'firstname'
     });
 
+    const sortMethod = ref(null);
+
     const tableData = reactive([]);
 
     const sortedData = computed<Record<string, unknown>[]>(() => {
@@ -14,6 +16,10 @@ export default function useTable () {
         }
 
         return tableData.sort((a, b) => {
+            if (sortMethod.value) {
+                return sortMethod.value(a, b);
+            }
+
             const modifier = tableState.ascending ? 1 : -1;
             if (a[tableState.column] < b[tableState.column]) { return -1 * modifier; }
             if (a[tableState.column] > b[tableState.column]) { return 1 * modifier; }
@@ -39,6 +45,7 @@ export default function useTable () {
         tableState,
         set,
         sort,
-        sortedData
+        sortedData,
+        sortMethod
     };
 }

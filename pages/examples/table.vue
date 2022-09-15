@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const { tableState, sortedData, sort, set } = useTable();
+const { tableState, sortedData, sort, sortMethod, set } = useTable();
 
 set([
     {
@@ -29,6 +29,13 @@ set([
         age: 56
     }
 ]);
+
+sortMethod.value = (a, b) => {
+    const modifier = tableState.ascending ? 1 : -1;
+    if (a[tableState.column] < b[tableState.column]) { return -1 * modifier; }
+    if (a[tableState.column] > b[tableState.column]) { return 1 * modifier; }
+    return 0;
+};
 
 </script>
 
