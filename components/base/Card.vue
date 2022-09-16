@@ -14,7 +14,6 @@ const cssClasses = computed(() => {
     const colorClass = props.color;
 
     return {
-        'base-card': true,
         'base-card--slim': props.slim,
         [`base-card--${colorClass}`]: true
     };
