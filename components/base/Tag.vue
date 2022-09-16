@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const cssClasses = computed(() => {
-    return props.color ? 'base-tag-color-' + props.color : '';
+    return props.color ? 'base-tag--' + props.color : '';
 });
 </script>
 

@@ -8,17 +8,17 @@
     @apply font-header;
     @apply tracking-wider;
 
-    &.base-tag-color-blue {
+    &--blue {
         @apply bg-blue-100;
         @apply text-blue-400;
     }
 
-    &.base-tag-color-turquoise {
+    &--turquoise {
         @apply bg-turquoise-100;
         @apply text-turquoise-400;
     }
 
-    &.base-tag-color-orange {
+    &--orange {
         @apply bg-orange-100;
         @apply text-orange-400;
     }

@@ -8,41 +8,41 @@ $teamsSidebarWidth: 250px;
     @apply pt-2;
     @apply bg-blue-700;
     width: 4.5rem;
-}
 
-.teams-sidebar .team-block,
-.teams-sidebar .add-block {
-    @apply aspect-square m-2;
-    @apply flex justify-center items-center;
-    @apply relative;
-    @apply cursor-pointer;
-    @apply bg-blue-600;
-    @apply h-10 w-10;
-    border-radius: 0.25rem; /* value not supported by Tailwind */
-    color: #ffffff;
+    &__team-block,
+    &__add-block {
+        @apply aspect-square m-2;
+        @apply flex justify-center items-center;
+        @apply relative;
+        @apply cursor-pointer;
+        @apply bg-blue-600;
+        @apply h-10 w-10;
+        border-radius: 0.25rem; /* value not supported by Tailwind */
+        color: #ffffff;
 
-    &::before {
-        @apply -top-1 -left-1 -right-1 -bottom-1;
-        @apply rounded-lg;
-        @apply absolute;
-        @apply -z-10;
-        content: ' ';
-        border: 2px solid transparent;
-    }
+        &::before {
+            @apply -top-1 -left-1 -right-1 -bottom-1;
+            @apply rounded-lg;
+            @apply absolute;
+            @apply -z-10;
+            content: ' ';
+            border: 2px solid transparent;
+        }
 
-    &:hover {
-        &:before {
-            @apply border-blue-400;
+        &:hover {
+            &:before {
+                @apply border-blue-400;
+            }
+        }
+
+        &--active {
+            &:before {
+                @apply border-blue-300;
+            }
         }
     }
-
-    &.active {
-        &:before {
-            @apply border-blue-300;
-        }
-    }
 }
 
-.teams-sidebar .add-block:hover {
+.teams-sidebar__add-block:hover {
     @apply bg-turquoise;
 }

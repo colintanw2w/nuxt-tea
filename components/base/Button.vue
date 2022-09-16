@@ -18,9 +18,9 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const cssClasses = computed(() => {
-    const colorClass = props.color ? 'btn-' + props.color : '';
+    const colorClass = props.color ? 'btn--' + props.color : '';
     const widthClass = props.full ? 'w-full' : '';
-    const invertedClass = props.inverted ? 'btn-inverted' : '';
+    const invertedClass = props.inverted ? 'btn--inverted' : '';
     return colorClass + ' ' + widthClass + '' + invertedClass;
 });
 </script>

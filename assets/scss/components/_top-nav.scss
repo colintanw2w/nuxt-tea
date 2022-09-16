@@ -67,7 +67,7 @@
             @apply ml-2;
         }
 
-        .user-first-name {
+        &__name {
             @apply text-white;
             @apply text-sm;
             @apply ml-4;
@@ -84,7 +84,7 @@
             }
         }
 
-        .user-menu-dropdown {
+        &__dropdown {
             @apply absolute right-0 top-11;
             @apply bg-white;
             @apply shadow-lg;
@@ -94,7 +94,7 @@
             @apply w-48;
             @apply z-10;
 
-            .user-menu-dropdown-item {
+            &__item {
                 @apply px-4;
                 @apply py-2;
                 @apply text-sm;

@@ -13,7 +13,7 @@ onClickOutside(el, () => { isOpen.value = false; });
 <template>
     <div ref="el" class="user-menu" @click="isOpen = !isOpen">
         <ProfileImage url="https://www.fillmurray.com/360/360" />
-        <div class="user-first-name">
+        <div class="user-menu__name">
             BillyalololoMoao
         </div>
         <font-awesome-icon :icon="['fas', chevronClass]" alt="profile image" />
