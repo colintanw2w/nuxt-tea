@@ -17,4 +17,9 @@
         @apply bg-turquoise-100;
         @apply text-turquoise-400;
     }
+
+    &.base-tag-color-orange {
+        @apply bg-orange-100;
+        @apply text-orange-400;
+    }
 }

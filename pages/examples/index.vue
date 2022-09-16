@@ -21,6 +21,11 @@ const sidebar = useSidebar();
                     Table example
                 </NuxtLink>
             </li>
+            <li>
+                <NuxtLink to="/examples/tag" class="underline hover:no-underline">
+                    Tags example
+                </NuxtLink>
+            </li>
         </ul>
     </div>
 </template>

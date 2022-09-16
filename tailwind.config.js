@@ -27,7 +27,8 @@ module.exports = {
             orange: {
                 DEFAULT: 'hsl(var(--td-color-orange-400), <alpha-value>)',
                 500: 'hsl(var(--td-color-orange-500), <alpha-value>)',
-                400: 'hsl(var(--td-color-orange-400), <alpha-value>)'
+                400: 'hsl(var(--td-color-orange-400), <alpha-value>)',
+                100: 'hsl(var(--td-color-orange-100), <alpha-value>)'
             },
             turquoise: {
                 DEFAULT:

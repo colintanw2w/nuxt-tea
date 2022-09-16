@@ -48,10 +48,10 @@ sortMethod.value = (a, b) => {
             <template #header>
                 <BaseTableRow class="p-4">
                     <BaseTableHeaderCol sortable="firstname" :sorting="tableState" class="lg:w-1/4" @sort="sort">
-                        Firstname
+                        Voornaam
                     </BaseTableHeaderCol>
                     <BaseTableHeaderCol sortable="lastname" :sorting="tableState" class="lg:w-2/4" @sort="sort">
-                        lastname
+                        Achternaam
                     </BaseTableHeaderCol>
                     <BaseTableHeaderCol sortable="age" :sorting="tableState" class="lg:w-1/4" @sort="sort">
                         Leeftijd

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-    type Color = 'orange' | 'blue' | 'white' | 'turquoise' | 'transparent';
+    type Color = 'orange' | 'blue' | 'turquoise';
+
     interface Props {
         color?: Color;
     }

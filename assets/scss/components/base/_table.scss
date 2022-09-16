@@ -1,4 +1,22 @@
 .base-table {
+    &__row {
+        @apply block;
+        @apply mb-2;
+
+        @screen lg {
+            @apply flex flex-row flex-wrap;
+        }
+    }
+
+    &__col {
+        @apply inline-flex flex-grow-0 flex-shrink-0 flex-auto items-center;
+
+        &--label,
+        &--sorted {
+            @apply font-header;
+        }
+    }
+
     &__header {
         @apply block;
 
@@ -16,24 +34,6 @@
 
         .svg-inline--fa {
             @apply pl-2;
-        }
-    }
-
-    &__row {
-        @apply block;
-        @apply mb-2;
-
-        @screen lg {
-            @apply flex flex-row flex-wrap;
-        }
-    }
-
-    &__col {
-        @apply inline-flex flex-grow-0 flex-shrink-0 flex-auto items-center;
-
-        &--label,
-        &--sorted {
-            @apply font-header;
         }
     }
 }
