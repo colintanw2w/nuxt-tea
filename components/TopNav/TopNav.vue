@@ -33,11 +33,11 @@ defineExpose({
 
             <TopNavUserMenu />
 
-            <div ref="el" class="">
+            <div ref="el" class="mobile-menu">
                 <BaseButton color="transparent" @click="isOpen = !isOpen">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                 </BaseButton>
-                <TopNavItems v-if="isOpen" class="mobile-menu" />
+                <TopNavItems v-if="isOpen" class="mobile-menu__items" />
             </div>
         </div>
     </nav>

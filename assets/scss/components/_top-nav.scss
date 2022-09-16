@@ -55,6 +55,11 @@
         @apply flex justify-center items-center;
         @apply cursor-pointer;
         @apply relative;
+        @apply mr-4;
+
+        @screen lg {
+            @apply mr-0;
+        }
 
         > svg {
             @apply text-white;
@@ -114,7 +119,7 @@
         }
     }
 
-    .mobile-menu > .router-link-active.btn,
+    .mobile-menu__items > .router-link-active.btn,
     .default-menu > .nav-link.router-link-active.btn {
         @apply text-opacity-90;
         @apply bg-black;
@@ -134,6 +139,14 @@
     }
 
     .mobile-menu {
+        @apply block;
+
+        @screen lg {
+            @apply hidden;
+        }
+    }
+
+    .mobile-menu__items {
         @apply bg-blue-400;
         @apply absolute;
         @apply block;

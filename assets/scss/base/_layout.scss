@@ -1,0 +1,14 @@
+@use '~scss/abstracts/colors';
+
+@layer base {
+    :root {
+        @each $name, $val in colors.$map {
+            --td-color-#{$name}: #{$val};
+        }
+    }
+}
+
+.content-container {
+    @apply max-w-screen-2xl mx-auto;
+    @apply px-6;
+}

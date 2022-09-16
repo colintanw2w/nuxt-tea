@@ -1,9 +1,9 @@
-@use 'abstracts/colors';
 @use 'base/typography';
+@use 'base/layout';
 @use 'layouts/default';
 @use 'layouts/login';
 
-@use 'components/base/box';
+@use 'components/base/card';
 @use 'components/base/button';
 @use 'components/base/table';
 @use 'components/base/tag';
@@ -15,16 +15,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-    :root {
-        @each $name, $val in colors.$map {
-            --td-color-#{$name}: #{$val};
-        }
-    }
-}
-
-.content-container {
-    @apply max-w-screen-2xl mx-auto;
-    @apply px-6;
-}

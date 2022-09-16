@@ -7,13 +7,20 @@ const sidebar = useSidebar();
 <template>
     <div class="content-container pt-8">
         <h1 class="h1 mb-7">
-            Buttons example
+            Examples page
         </h1>
-        <NuxtLink to="/examples/buttons">
-            Buttons example
-        </NuxtLink>
-        <NuxtLink to="/examples/table">
-            Table example
-        </NuxtLink>
+        <p>Instead of component library, for now using this page</p>
+        <ul class="list-disc ml-4 my-4">
+            <li>
+                <NuxtLink to="/examples/buttons" class="underline hover:no-underline">
+                    Buttons and cards example
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink to="/examples/table" class="underline hover:no-underline">
+                    Table example
+                </NuxtLink>
+            </li>
+        </ul>
     </div>
 </template>

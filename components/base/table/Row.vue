@@ -15,7 +15,7 @@ const baseCssClasses = 'base-table__row';
 </script>
 
 <template>
-    <BaseBox
+    <BaseCard
         v-if="box"
         :class="{ 'row-error': error, [`${baseCssClasses}`]: true }"
         class=""
@@ -23,7 +23,7 @@ const baseCssClasses = 'base-table__row';
         @click.middle="$emit('middleClick')"
     >
         <slot />
-    </BaseBox>
+    </BaseCard>
     <div
         v-else
         :class="{ 'row-error': error, [`${baseCssClasses}`]: true }"

@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "Lato Regular";
+    font-family: 'Lato Regular';
     font-style: normal;
-    src: url("~/assets/fonts/Lato-Regular.ttf") format("truetype");
+    src: url('~/assets/fonts/Lato-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Lato Bold";
+    font-family: 'Lato Bold';
     font-style: normal;
-    src: url("~/assets/fonts/Lato-Bold.ttf") format("truetype");
+    src: url('~/assets/fonts/Lato-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
@@ -22,7 +22,7 @@ body {
 .h1,
 .h2,
 .h3 {
-    @apply text-blue-600;
+    @apply text-blue-700;
     @apply font-header;
 }
 

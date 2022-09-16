@@ -11,6 +11,7 @@ module.exports = {
             black: 'hsl(var(--td-color-black), <alpha-value>)',
             blue: {
                 DEFAULT: 'hsl(var(--td-color-blue-400), <alpha-value>)',
+                700: 'hsl(var(--td-color-blue-700), <alpha-value>)' /* heading, teams bar */,
                 600: 'hsl(var(--td-color-blue-600), <alpha-value>)' /* heading, teams bar */,
                 500: 'hsl(var(--td-color-blue-500), <alpha-value>)' /* teams sidebar block default color */,
                 400: 'hsl(var(--td-color-blue-400), <alpha-value>)' /* topnav color, login background color */,
