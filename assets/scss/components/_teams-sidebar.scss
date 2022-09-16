@@ -17,8 +17,7 @@ $teamsSidebarWidth: 250px;
     @apply relative;
     @apply cursor-pointer;
     @apply bg-blue-600;
-    width: 2.5rem;
-    height: 2.5rem;
+    @apply h-10 w-10;
     border-radius: 0.25rem; /* value not supported by Tailwind */
     color: #ffffff;
 
