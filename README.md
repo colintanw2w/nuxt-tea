@@ -60,3 +60,16 @@ https://www.youtube.com/watch?v=zzUpO8tXoaw
 ## Using @use instead of @import in SASS
 
 https://www.youtube.com/watch?v=CR-a8upNjJ0
+
+## Unit testing
+- https://v3.nuxtjs.org/getting-started/testing/
+- https://vitejs.dev/config/
+
+Run once with coverage:
+```bash
+npm run test
+```
+Watcher:
+```bash
+npm run test:watch
+```
