@@ -37,7 +37,7 @@ defineExpose({
                 <BaseButton color="transparent" @click="isOpen = !isOpen">
                     <font-awesome-icon :icon="['fas', 'bars']" />
                 </BaseButton>
-                <TopNavItems v-if="isOpen" class="mobile-menu__items" />
+                <TopNavItems v-if="isOpen" class="mobile-menu__items" @click="isOpen = false" />
             </div>
         </div>
     </nav>

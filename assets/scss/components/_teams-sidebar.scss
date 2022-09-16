@@ -22,14 +22,11 @@ $teamsSidebarWidth: 250px;
     color: #ffffff;
 
     &::before {
-        border-radius: 8px;
+        @apply -top-1 -left-1 -right-1 -bottom-1;
+        @apply rounded-lg;
+        @apply absolute;
+        @apply -z-10;
         content: ' ';
-        position: absolute;
-        z-index: -1;
-        top: -4px;
-        left: -4px;
-        right: -4px;
-        bottom: -4px;
         border: 2px solid transparent;
     }
 
